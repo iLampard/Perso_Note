@@ -1,6 +1,6 @@
 # Summary
-* [??](README.md)
-## ????
+* [简介](README.md)
+## 编程语言
 * Python
     * [django](ProgrammingLanguage/python/django.md)
     * [general](ProgrammingLanguage/python/general.md)
