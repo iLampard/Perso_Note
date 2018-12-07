@@ -6,11 +6,13 @@
 #### NA Handler
 
 - fillna
+  
 ```python
 df.fillna(df.median(), inplace=True)
 ```
 
 - countna
+  
 ```python
 df.apply(lambda x: sum(x.isnull()))
 ```
@@ -36,6 +38,7 @@ train.loc[train[col] > ubound, col] = ubound
 
 #### loc and iloc 
 - replace
+  
 ```python
 ret.loc[ret['date'] == '2018-06-30', 'date'] = '2018-06-29'
 ```

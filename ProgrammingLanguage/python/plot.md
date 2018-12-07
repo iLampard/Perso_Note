@@ -56,3 +56,4 @@ clf.fit(X, y)
 plot_decision_boundary(lambda x: clf.predict(x))
 plt.title("Logistic Regression")
 plt.show()
+···
