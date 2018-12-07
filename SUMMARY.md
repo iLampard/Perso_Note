@@ -14,3 +14,6 @@
     * [pandas](ProgrammingLanguage/python/pandas.md)
     * [plot](ProgrammingLanguage/python/plot.md)
   
+## 数据库
+* Scripts
+    * [Sql scripts](Database/scripts/sql_scripts.md)

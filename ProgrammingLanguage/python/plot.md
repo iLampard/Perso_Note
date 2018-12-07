@@ -29,7 +29,6 @@ plt.show()
 #### Plot decision boundary
 
 ```python
-
 def plot_decision_boundary(pred_func):
     # 设定最大最小值，附加一点点边缘填充
     x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
@@ -45,9 +44,8 @@ def plot_decision_boundary(pred_func):
     # 然后画出图
     plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral)
     plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Spectral)
-
-    
-    
+```
+```python
 from sklearn.linear_model import LogisticRegressionCV
 
 clf = LogisticRegressionCV()
@@ -56,4 +54,4 @@ clf.fit(X, y)
 plot_decision_boundary(lambda x: clf.predict(x))
 plt.title("Logistic Regression")
 plt.show()
-···
+```
