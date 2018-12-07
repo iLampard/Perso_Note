@@ -12,8 +12,11 @@ python manage.py runserver 0.0.0.0:8000 --insecure
 
 #### 在PyCharm中快捷启动设置
 Run/Debug Configurations
-在PyCharm Professional版本中选择‘Django server’然后设置
-- Additional options: --insecure
+- 如果是PyCharm Professional版本，选择‘Django server’然后设置
+    - Additional options: --insecure
+- 如果是社区版本
+    - Script path: ****\manage.py
+    - Parameter: runserver --insecure
 
 ### 语法问题
 #### Iterate through dict in django template
