@@ -15,5 +15,7 @@
     * [plot](ProgrammingLanguage/python/plot.md)
   
 ## 数据库
-* Scripts
-    * [Sql scripts](Database/scripts/sql_scripts.md)
+* [Sql scripts](Database/scripts/sql_scripts.md)
+
+## 深度学习
+* [Sequence model](DeepLearning/sequence_model.md)
