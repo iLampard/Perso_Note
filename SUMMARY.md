@@ -13,11 +13,17 @@
     * [general](ProgrammingLanguage/python/general.md)
     * [pandas](ProgrammingLanguage/python/pandas.md)
     * [plot](ProgrammingLanguage/python/plot.md)
-  
+
+* Java
+    * [general](ProgrammingLanguage/java/geneal.md)
+    * [oop concepts](ProgrammingLanguage/java/oop.md)
+
 ## 数据库
 * [Sql scripts](Database/sql_scripts.md)
 
 ## 深度学习
+* Convolution network
+    * [convolution network](DeepLearning/convolution/convolution_network.md)
 * Sequnce model
     * [sequence model](DeepLearning/sequence_model/sequence_model.md)
 * Tensorflow

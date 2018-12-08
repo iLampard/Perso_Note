@@ -1,8 +1,8 @@
-# Building Neutral Network 
+# Neutral network snippets
 
 
-### 搭建流程
-
+### 简单神经网络的搭建
+ 
 定义添加神经层的函数
 - 训练的数据
 - 定义节点准备接收数据
@@ -79,5 +79,26 @@ for i in range(1000):
 ```
 
 
+### 卷积神经网络
+
+#### Strides
+在二维卷积函数tf.nn.conv2d()，最大池化函数tf.nn.max_pool()，平均池化函数tf.nn.avg_pool()中，卷积核的移动步长都需要制定一个参数strides。如果strides=[b,h,w,c]，其中strides[0]和strides[3]默认为1。
+- b表示在样本上的步长默认为1，也就是每一个样本都会进行运算。
+- h表示在高度上的默认移动步长为1，这个可以自己设定，根据网络的结构合理调节。
+- w表示在宽度上的默认移动步长为1，这个同上可以自己设定。
+- c表示在通道上的默认移动步长为1，这个表示每一个通道都会进行运算。
+
+该解释同样应用于卷积核参数*kisze*。
+```python
+# 池化的核函数大小为2x2，因此ksize=[1,2,2,1]，步长为2，因此strides=[1,2,2,1]
+def max_poo_2x2(x): 
+	return tf.nn.max_pool(x,ksize=[1,2,2,1],strides=[1,2,2,1])
+```
+
+#### SAME vs VALID
+- padding='SAME': 输出大小等于输入大小除以步长向上取整，s是步长大小.
+- padding='VALID': 输出大小等于输入大小减去滤波器大小加上1，最后再除以步长（f为滤波器的大小，s是步长大小）。
+
 ### Reference
-[一文学会用 Tensorflow 搭建神经网络](http://www.jianshu.com/p/e112012a4b2d)
+- [一文学会用 Tensorflow 搭建神经网络](http://www.jianshu.com/p/e112012a4b2d)
+- [TensorFlow中padding卷积的两种方式](https://blog.csdn.net/syyyy712/article/details/80272071)
