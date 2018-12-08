@@ -18,4 +18,10 @@
 * [Sql scripts](Database/sql_scripts.md)
 
 ## 深度学习
-* [Sequence model](DeepLearning/sequence_model.md)
+* Sequnce model
+    * [sequence model](DeepLearning/sequence_model/sequence_model.md)
+* Tensorflow
+    * [neutral_network](DeepLearning/tensorflow/neutral_network.md)
+    * [optimizer](DeepLearning/tensorflow/optimizer.md)
+    * [rnn](DeepLearning/tensorflow/rnn.md)
+  
