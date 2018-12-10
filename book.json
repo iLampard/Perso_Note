@@ -2,5 +2,5 @@
     "title": "学习笔记汇总",
     "description": "Personal Note on various technical topics",
     "author": "iLampard",
-    "plugins": ["mathjax"]
+    "plugins": ["katex"]
 }
