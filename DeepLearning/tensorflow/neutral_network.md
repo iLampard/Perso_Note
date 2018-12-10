@@ -99,6 +99,19 @@ def max_poo_2x2(x):
 - padding='SAME': 输出大小等于输入大小除以步长向上取整，s是步长大小.
 - padding='VALID': 输出大小等于输入大小减去滤波器大小加上1，最后再除以步长（f为滤波器的大小，s是步长大小）。
 
+#### reduction_index
+
+```python
+# 'x' is [[1, 1, 1]
+#         [1, 1, 1]]
+tf.reduce_sum(x) ==> 6
+tf.reduce_sum(x, 0) ==> [2, 2, 2]
+tf.reduce_sum(x, 1) ==> [3, 3]
+tf.reduce_sum(x, 1, keep_dims=True) ==> [[3], [3]]
+tf.reduce_sum(x, [0, 1]) ==> 6
+```
+
+
 ### Reference
 - [一文学会用 Tensorflow 搭建神经网络](http://www.jianshu.com/p/e112012a4b2d)
 - [TensorFlow中padding卷积的两种方式](https://blog.csdn.net/syyyy712/article/details/80272071)
