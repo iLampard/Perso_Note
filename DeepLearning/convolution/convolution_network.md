@@ -1,4 +1,6 @@
 # Convolution network 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 
 ### 2-D convolution
 
@@ -24,14 +26,14 @@ Stride表示过滤器在原图片中水平方向和垂直方向每次的步进�
 #### Chanel
 原始图像数据的第三个维度通常叫做通道。卷积核中的通道数必须与原始图像的通道数一致。
 
-#### Size of variables
+#### Size of variables
 不同的卷积核可以得到不同的一维特征图，把这些特征图堆叠到一起可以得到三维的输出立方体。
 
-假设 layer l 是卷积层。过滤器宽度 $f^l$, padding $p^l$, 步长$s^l$, 过滤器的数量 $n_c^l$。
-- input layer维度: $n_H^{l-1} * n_w^{l-1} * n_c^{l-1}$
-- output layer维度: $n_H^l * n_w^l * n_c^l$
-    - $n_H^l = (n_H^{l-1} + 2p^l - f^l) / s^l + 1$
-    - $n_w^l = (n_w^{l-1} + 2p^l - f^l) / s^l + 1$
+假设 layer l 是卷积层。过滤器宽度 $$f^l$$, padding $$p^l$$, 步长$$s^l$$, 过滤器的数量 $$n_c^l$$。
+- input layer维度: $$( n_H^{l-1} * n_w^{l-1} * n_c^{l-1} $$)
+- output layer维度: $$n_H^l * n_w^l * n_c^l$$
+    - $$n_H^l = (n_H^{l-1} + 2p^l - f^l) / s^l + 1$$
+    - {% n_w^l = (n_w^{l-1} + 2p^l - f^l) / s^l + 1 %}
   
 - 过滤器维度: $f^l * f^l * n_c^{l-1}$
 - 激活函数维度: $a^l$ same size with output layer
