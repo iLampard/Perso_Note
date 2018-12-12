@@ -21,5 +21,27 @@ tf.nn.weighted_cross_entropy_with_logits
 - 适用：每个类别相互独立且排斥的情况，一幅图只能属于一类，而不能同时包含一条狗和一只大象
 - outputs 与 *sigmoid_cross_entropy_with_logits* 相同
 
+### batch normalization
+
+在启用激活函数前对batch进行更新。
+```python
+fc_mean, fc_var = tf.nn.moments(
+    Wx_plus_b,
+    axes=[0],   # 想要 normalize 的维度, [0] 代表 batch 维度
+                # 如果是图像数据, 可以传入 [0, 1, 2], 相当于求[batch, height, width] 的均值/方差, 注意不要加入 channel 维度
+)
+scale = tf.Variable(tf.ones([out_size]))
+shift = tf.Variable(tf.zeros([out_size]))
+epsilon = 0.001
+Wx_plus_b = tf.nn.batch_normalization(Wx_plus_b, fc_mean, fc_var, shift, scale, epsilon)
+# 上面那一步, 在做如下事情:
+# Wx_plus_b = (Wx_plus_b - fc_mean) / tf.sqrt(fc_var + 0.001)
+# Wx_plus_b = Wx_plus_b * scale + shift
+```
+
+
 ### Reference
-[TensorFlow交叉熵函数(cross_entropy)·理解](https://www.jianshu.com/p/cf235861311b)
+- [TensorFlow交叉熵函数(cross_entropy)·理解](https://www.jianshu.com/p/cf235861311b)
+- [Batch Normalization 批标准化](https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/5-13-BN/)
+
+
