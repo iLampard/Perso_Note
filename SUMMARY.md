@@ -30,8 +30,13 @@
     * [neutral_network](DeepLearning/tensorflow/neutral_network.md)
     * [optimizer](DeepLearning/tensorflow/optimizer.md)
     * [rnn](DeepLearning/tensorflow/rnn.md)
-  
+    * [seq2seq](DeepLearning/tensorflow/seq2seq.md)
 
 ## 常用算法
 * 字符串
   * [string](Algorithms/string/string.md)
+
+
+## 工具平台
+* Workflow tools
+  * [schedulers](Tools/workflow/schedulers.md)

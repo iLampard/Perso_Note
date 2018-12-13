@@ -76,6 +76,68 @@ TrainingHelper用于train阶段，next_inputs方法一样也接收outputs与samp
 - end_token：序列终止的token_id
 
 
+#### tf.nn.embedding_lookup
+
+```python
+embedding_lookup(
+    params,
+    ids,
+    partition_strategy='mod',
+    name=None,
+    validate_indices=True,
+    max_norm=None
+)
+```
+
+tf.nn.embedding_lookup的作用就是找到要寻找的embedding data中的对应的（索引）行下的vector。
+- params就是输入张量。
+- id就是张量对应的索引。
+
+![embedding_matrix](https://upload-images.jianshu.io/upload_images/1129359-51ec3c90c272f132.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/621/format/webp)
+
+```python
+import numpy as np
+import tensorflow as tf
+data = np.array([[[2],[1]],[[3],[4]],[[6],[7]]])
+data = tf.convert_to_tensor(data)  # (3, 2, 1)
+lk = [[0,1],[1,0],[0,0]]  # (3, 2)
+lookup_data = tf.nn.embedding_lookup(data,lk) # (3, 2, 2, 1)： 第一个(3,2) 来自于lk; (2,1)来自于data 
+init = tf.global_variables_initializer()
+# lk[0]也就是[0,1]对应着下面sess.run(lookup_data)的结果恰好是把data中的[[2],[1]],[[3],[4]]
+sess.run(lookup_data)
+```
+output
+```python
+array([[[[2],
+         [1]],
+
+        [[3],
+         [4]]],
+
+
+       [[[3],
+         [4]],
+
+        [[2],
+         [1]]],
+
+
+       [[[2],
+         [1]],
+
+        [[2],
+         [1]]]])
+
+```
+
+
+详细例子可见[tf.nn.embedding_lookup记录](https://www.jianshu.com/p/abea0d9d2436)。
+
+#### tf.contrib.seq2seq.dynamic_decode
+
+
+
 
 ### Reference
 - [seq2seq模型初探](https://www.jianshu.com/p/779e022a8644?hmsr=toutiao.io)
+- [tf.nn.embedding_lookup记录](https://www.jianshu.com/p/abea0d9d2436)
