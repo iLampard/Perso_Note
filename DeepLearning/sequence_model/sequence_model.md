@@ -37,7 +37,7 @@ for index in range(len(x) - self.seq_len - self.pred_len):
 
 ### Encode / Decode
 
-
+![encoder_example](https://4.bp.blogspot.com/-aArS0l1pjHQ/Vjj71pKAaEI/AAAAAAAAAxE/Nvy1FSbD_Vs/s1600/2TFstaticgraphic_alt-01.png)
 
 
 

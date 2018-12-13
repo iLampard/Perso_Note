@@ -134,8 +134,16 @@ array([[[[2],
 详细例子可见[tf.nn.embedding_lookup记录](https://www.jianshu.com/p/abea0d9d2436)。
 
 #### tf.contrib.seq2seq.dynamic_decode
-
-
+```python
+outputs, state, seq_len = tf.contrib.seq2seq.dynamic_decode(
+                            decoder=decoder,
+                            output_time_major=False,
+                            impute_finished=True,
+                            maximum_iterations=20)
+```
+outputs是一个namedtuple，里面包含两项(rnn_outputs, sample_id)
+- rnn_outputs: [batch_size, decoder_targets_length, vocab_size], 保存decode每个时刻每个单词的概率，可以用来计算loss。
+- sample_id： [batch_size], tf.int32，保存最终的编码结果。可以表示最后的答案。
 
 
 ### Reference
