@@ -24,7 +24,7 @@
 ## 深度学习
 * Convolution network
     * [convolution network](DeepLearning/convolution/convolution_network.md)
-* Reenforcement learning
+* Reinforcement learning
     * [q-learning](DeepLearning/reinforcement/q-learning.md)
 * Sequnce model
     * [sequence model](DeepLearning/sequence_model/sequence_model.md)
