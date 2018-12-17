@@ -26,14 +26,15 @@
     * [convolution network](DeepLearning/convolution/convolution_network.md)
 * Reinforcement learning
     * [q-learning](DeepLearning/reinforcement/q-learning.md)
-* Sequnce model
+* Sequence model
     * [sequence model](DeepLearning/sequence_model/sequence_model.md)
 * Tensorflow
     * [neutral_network](DeepLearning/tensorflow/neutral_network.md)
     * [optimizer](DeepLearning/tensorflow/optimizer.md)
     * [rnn](DeepLearning/tensorflow/rnn.md)
     * [seq2seq](DeepLearning/tensorflow/seq2seq.md)
-
+* NLP
+    * [nlp](DeepLearning/nlp/nlp.md)
 ## 常用算法
 * 字符串
   * [string](Algorithms/string/string.md)
