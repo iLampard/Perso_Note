@@ -37,7 +37,15 @@ for index in range(len(x) - self.seq_len - self.pred_len):
 
 ### Encode / Decode
 
-![encoder_example](https://4.bp.blogspot.com/-aArS0l1pjHQ/Vjj71pKAaEI/AAAAAAAAAxE/Nvy1FSbD_Vs/s1600/2TFstaticgraphic_alt-01.png)
+对于RNN语言模型，本质上是计算在给定输入F下输出E的条件概率P(E|F)。 在计算输出序列E的概率时，先令一个RNN处理源序列F，来计算语言模型的初始状态。
+
+encoder-decoder的含义是：通过第一个神经网络来“编码”F的信息到一个隐层状态，在使用第二个神经网络来预测E“解码”该隐层到输出序列。
+- encoder层的处理单元是RNN(f)，decoder层是RNN(e)，对decoder层的输出采用softmax来获得时刻t输出该隐层的概率。
+- encoder和decoder的区别在于：encoder的隐层初始值是零，而decoder层的初始值是encoder层的最终输出向量，这意味着decoder层获得了源序列的所有语义信息。
+- 在每次decoder出一个et时，我们将其embedding和输出hidden state连结输入到下一个RNN单元，直到解码到句尾标记。（hidden state经过softmax后得到的概率向量的维度为词典维，类似于one-hot representation，每一维代表词典中的一个词，概率最高即为预测得到的词）。
+
+![encoder_example](https://pic3.zhimg.com/80/v2-cf0fb9418d3ca6894d729a93b3d08746_hd.png
+)
 
 
 
