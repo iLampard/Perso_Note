@@ -95,9 +95,11 @@ def max_poo_2x2(x):
 	return tf.nn.max_pool(x,ksize=[1,2,2,1],strides=[1,2,2,1])
 ```
 
+
 #### SAME vs VALID
 - padding='SAME': 输出大小等于输入大小除以步长向上取整，s是步长大小.
 - padding='VALID': 输出大小等于输入大小减去滤波器大小加上1，最后再除以步长（f为滤波器的大小，s是步长大小）。
+
 
 #### reduction_index
 
