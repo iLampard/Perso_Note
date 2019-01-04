@@ -29,10 +29,12 @@
 * Sequence model
     * [sequence model](DeepLearning/sequence_model/sequence_model.md)
 * Tensorflow
+    * [utility](DeepLearning/tensorflow/utils.md)
     * [neutral_network](DeepLearning/tensorflow/neutral_network.md)
     * [optimizer](DeepLearning/tensorflow/optimizer.md)
     * [rnn](DeepLearning/tensorflow/rnn.md)
-    * [seq2seq](DeepLearning/tensorflow/seq2seq.md)
+    * [seq2seq utils](DeepLearning/tensorflow/seq2seq_utils.md)
+    * [seq2seq dynamic unrolling](DeepLearning/tensorflow/seq2seq_dynamic.md)
 * NLP
     * [nlp](DeepLearning/nlp/nlp.md)
 
