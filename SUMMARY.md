@@ -36,6 +36,7 @@
     * [rnn](DeepLearning/tensorflow/rnn.md)
     * [seq2seq utils](DeepLearning/tensorflow/seq2seq_utils.md)
     * [seq2seq dynamic unrolling](DeepLearning/tensorflow/seq2seq_dynamic.md)
+    * [seq2seq attention](DeepLearning/tensorflow/seq2seq_attention.md)
 * NLP
     * [nlp](DeepLearning/nlp/nlp.md)
 
