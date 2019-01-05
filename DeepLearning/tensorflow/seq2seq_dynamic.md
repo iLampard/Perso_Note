@@ -52,7 +52,7 @@ decoder_inputs = tf.placeholder(shape=(None, None), dtype=tf.int32, name='decode
 经过词向量转化，encoder_inputs和decoder_inputs的size由 [max_time, batch_size] 变成 [max_time, batch_size, input_embedding_size]
 
 ```python
-# 初始化一个随机的词向量矩阵，后面优化过程中自行去学习
+# 初始化一个随机的词嵌入矩阵，后面优化过程中自行去学习
 embeddings = tf.Variable(tf.random_uniform([vocab_size, input_embedding_size], -1.0, 1.0), dtype=tf.float32)
 
 encoder_inputs_embedded = tf.nn.embedding_lookup(embeddings, encoder_inputs)
