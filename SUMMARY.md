@@ -28,6 +28,7 @@
     * [q-learning](DeepLearning/reinforcement/q-learning.md)
 * Sequence model
     * [sequence model](DeepLearning/sequence_model/sequence_model.md)
+    * [attention model](DeepLearning/sequence_model/attention.md)
 * Tensorflow
     * [utility](DeepLearning/tensorflow/utils.md)
     * [neutral_network](DeepLearning/tensorflow/neutral_network.md)
