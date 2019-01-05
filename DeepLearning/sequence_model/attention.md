@@ -40,7 +40,7 @@ $$y_3 = g(C,y_1,y_2)$$
 ![](DeepLearning/../attention2_2.png)
 
 3. $$C_i = \sum_{j=0}^{T_x}a_{ij}h_j$$: context vector是一个对于encoder输出的hidden states的一个加权平均。
-4. $$a_{ij} = \frac{\exp{e_{ij}}{\sum_{k=1}^{T_x} \exp{e_{ik}}}$$:每一个encoder的hidden states对应的权重。
+4. $$a_{ij} = \frac{exp{e_{ij}}}{\sum_{k=1}^{T_x} \exp{e_{ik}}}$$:每一个encoder的hidden states对应的权重。
 5. $$e_{ij}=score(s_i, h_i)$$, 通过decoder的hidden states加上encoder的hidden states来计算一个分数，用于计算权重(4)。
    
 ![](DeepLearning/../attention2_3.png)
