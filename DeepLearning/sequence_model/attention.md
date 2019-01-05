@@ -31,20 +31,29 @@ $$y_3 = g(C,y_1,y_2)$$
 输出: $$y = (y_1, y_2,..., y_{T_y}) $$
 
 1. $$h_t = RNN_{Encoder}(x_t, h_{t-1})$$: Encoder方面接受的是每一个单词word embedding，和上一个时间点的hidden state。输出的是这个时间点的hidden state。见下图。
-    ![](DeepLearning/../attention2_1.png)
+   
+![](DeepLearning/../attention2_1.png)
 
 
 2. $$s_t = RNN_{Decoder}(\hat{y}_{t-1}, s_{t-1})$$: Decoder方面接受的是目标句子里单词的word embedding，和上一个时间点的hidden state。见下图。
-   ![](DeepLearning/../attention2_2.png)
+   
+![](DeepLearning/../attention2_2.png)
 
 3. $$C_i = \sum_{j=0}^{T_x}a_{ij}h_j$$: context vector是一个对于encoder输出的hidden states的一个加权平均。
 4. $$a_{ij} = \frac{\exp{e_{ij}}{\sum_{k=1}^{T_x} \exp{e_{ik}}} $$:每一个encoder的hidden states对应的权重。
 5. $$e_{ij}=score(s_i, h_i)$$, 通过decoder的hidden states加上encoder的hidden states来计算一个分数，用于计算权重(4)。
    
-    ![](DeepLearning/../attention2_3.png)
+![](DeepLearning/../attention2_3.png)
 
-6. $$\hat{s}_t=tanh(W_c[c_t;s_t])$$: 将context vector 和 decoder的hidden states 串起来。
+6. 在下一个时间点，$$\hat{s}_t=tanh(W_c[c_t;s_t])$$: 将context vector 和 decoder的hidden states 串起来。
+
+![](DeepLearning/../attention2_4.png)
+
+
 7. $$P(y_t \vert y_{<t}, x) =softmax(W_s \hat{s_t})$$: 计算最后的输出概率。
+
+![](DeepLearning/../attention2_5.png)
+
 
 ### Reference
 - [真正的完全图解Seq2Seq Attention模型](https://zhuanlan.zhihu.com/p/40920384)
