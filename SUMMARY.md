@@ -41,7 +41,7 @@
     * [general](DeepLearning/nlp/general.md)
     * [word2vec model](DeepLearning/nlp/nlp_word2vec.md)
     * [transformer model](DeepLearning/nlp/transformer.md)
-    * [bert model](DeepLearning/nlp/bert.md)
+    * [bert model](DeepLearning/nlp/google_bert.md)
 
 ## 常用算法
 * 字符串
