@@ -27,3 +27,7 @@ python setup.py bdist_wheel
 C:\\Users\\xxxxx\\AppData\\Local\\pip
 ```
   
+#### pip使用阿里源
+```python
+pip install -i https://mirrors.aliyun.com/pypi/simple package_name
+```

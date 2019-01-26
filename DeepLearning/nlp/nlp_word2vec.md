@@ -20,14 +20,28 @@ Word2Vec就是把单词转换成向量。它本质上是一种单词聚类的方
 - 去掉最后一个输出层。
 - 输入字典中的任意单词，隐藏层输出的向量便是该单词的词嵌入向量。
 
-输入层到隐藏层的矩阵运算和维度变化可参加下图。
+#### 模型结构
+- 输入层到隐藏层将输入样本的维度从原始的*vocab_size*(跟字典大小相关)变成了*embedding_size*(通常要比字典小得多，如300维度)。
 
 ![](Deeplearning/../nlp_matrix.png)
+
+- 隐藏层到输出层，又将样本维度恢复到*vocab_size*,此时每个样本输出对应的是一个概率向量，代表字典中每个词的概率。
+  
+![](Deeplearning/../nlp_word2vec_2.png)
+
+- 最后用softmax堆输出进行归一化，与真实样本进行比较，得到损失函数。
+  
+![](Deeplearning/../nlp_word2vec_3.png)
 
 #### 训练样本设置
 以skip-gram模型为例，模型需要设置一个参数*window_size*，假设其为n，表示以当前词为中心，需要预测前n个以及后n个单词，以此构成训练样本。具体可参考下面的图片。
 
 ![](Deeplearning/../nlp_sampling.png)
+
+
+
+
+
 
 ### TF-IDF(Term Frequency-Inverse Document Frequency, 词频-逆文件频率)
 一个词语在一篇文章中出现次数越多, 同时在所有文档中出现次数越少, 越能够代表该文章。

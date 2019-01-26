@@ -46,6 +46,8 @@
 ## 常用算法
 * 字符串
   * [string](Algorithms/string/string.md)
+* 搜索
+  * [search](Algorithms/search/search.md)
 
 
 ## 工具平台
