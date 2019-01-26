@@ -5,6 +5,8 @@
 
 * Linux
     * [Ubuntu](OS/linux/ubuntu.md)
+* DOS
+    * [Dos](OS/dos/batch.md)
 
 ## [编程语言](ProgrammingLanguage/contents.md)
 
@@ -42,6 +44,8 @@
     * [word2vec model](DeepLearning/nlp/nlp_word2vec.md)
     * [transformer model](DeepLearning/nlp/transformer.md)
     * [bert model](DeepLearning/nlp/google_bert.md)
+* Probabilistic
+  * [variational antuoencoder](DeepLearning/probabilistic/vae.md)
 
 ## 常用算法
 * 字符串
