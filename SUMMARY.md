@@ -56,6 +56,8 @@
 ## 数学理论
 * Topology
   * [set](Mathematics/topology/set.md)
+* Probability
+  * [discrete process](Mathematics/probability/discrete_process.md)
 
 ## 工具平台
 * Workflow tools
