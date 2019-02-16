@@ -47,13 +47,14 @@
 * Probabilistic
   * [variational antuoencoder](DeepLearning/probabilistic/vae.md)
 
+## 常用算法
 * 字符串
   * [string](Algorithms/string/string.md)
 * 搜索
   * [search](Algorithms/search/search.md)
 
 ## 数学理论
-* 拓扑
+* Topology
   * [set](Mathematics/topology/set.md)
 
 ## 工具平台
