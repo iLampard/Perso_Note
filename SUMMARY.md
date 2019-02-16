@@ -48,9 +48,9 @@
   * [variational antuoencoder](DeepLearning/probabilistic/vae.md)
 
 ## 常用算法
-* 字符串
+* strings
   * [string](Algorithms/string/string.md)
-* 搜索
+* search
   * [search](Algorithms/search/search.md)
 
 ## 数学理论
