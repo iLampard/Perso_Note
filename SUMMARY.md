@@ -25,7 +25,7 @@
 
 ## 深度学习
 * Convolution network
-    * [convolution network](DeepLearning/convolution/convolution_network.md)
+  * [convolution network](DeepLearning/convolution/conv_network.md)
 * Reinforcement learning
     * [q-learning](DeepLearning/reinforcement/q-learning.md)
 * Sequence model
@@ -53,6 +53,9 @@
 * 搜索
   * [search](Algorithms/search/search.md)
 
+## 数学理论
+* 拓扑
+  * [set](Mathematics/topology/set.md)
 
 ## 工具平台
 * Workflow tools
