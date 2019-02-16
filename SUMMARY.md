@@ -47,7 +47,6 @@
 * Probabilistic
   * [variational antuoencoder](DeepLearning/probabilistic/vae.md)
 
-## 常用算法
 * 字符串
   * [string](Algorithms/string/string.md)
 * 搜索
@@ -60,3 +59,4 @@
 ## 工具平台
 * Workflow tools
   * [schedulers](Tools/workflow/schedulers.md)
+
