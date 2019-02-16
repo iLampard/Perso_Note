@@ -2,24 +2,22 @@
 
 Let $$(\Omega, \mathcal{F}, \mathbb{P})$$ be a probability space.
 
+## Filtration
+### Stochastic process
+A collection of random variables $$X:=(X_n)_{n \ge 0}$$ is called a (discrete time) *stochastic process*.
+
 ### Filtration
-#### Definition
-A collection of random variables $$X:=(X_n)_{n \ge 0}$$ is called a (discrete time) stochastic process.
-
-
-#### Definition
 A non­decreasing sequence of $$\sigma$$-algebras $$\mathcal{F}_0 \subseteq \mathcal{F}_1 \subseteq ...\subseteq  \mathcal{F}_n \subseteq ... \subseteq \mathcal{F}$$ is called a *filtration*.
 
 Let $$X:=(X_n)_{n \ge 0}$$ be a sequence of r.v.s. Let $$\mathcal{F}_n=\sigma(X_0, X_1, ..., X_n)$$, $$n \ge 0$$. The filtration $$(\mathcal{F_n})_{n \ge 0}$$ is called the natural filtration of $$X$$.
 
-
-#### Definition
+#### Filtered probability space
 The probability space $$(\Omega, \mathcal{F}, \mathbb{P})$$ equipped with a filtration $$(\mathcal{F_n})_{n \ge 0}$$ denoted $$(\Omega, \mathcal{F_n}, \mathbb{P})$$ by *filtered probability space*.
 
-#### Definition
-A stochastic process $$X$$ is called adapted to the filtration $$(\mathcal{F_n})_{n \ge 0}$$ if $$X_n$$ is a $$\mathcal{F_n}$$ - measurable for every $$n \ge 0$$.
+#### Adapted to filtration
+A stochastic process $$X$$ is called *adapted* to the filtration $$(\mathcal{F_n})_{n \ge 0}$$ if $$X_n$$ is a $$\mathcal{F_n}$$ - measurable for every $$n \ge 0$$.
 
-### Martingales
+## Martingales
 Let $$(\Omega, \mathcal{F_n}, \mathbb{P})$$ be a filtered probability space. A stochastic process $$X$$ is called a martingale(submartingale, supermartingale) with respect to the filtration $$(\mathcal{F_n})_{n \ge 0}$$ if it satisfies
 - $$\mathbb{E} \vert X_n \vert < \infty, \forall n \ge 0$$.
 - $$X$$ is adapted to $$(\mathcal{F_n})_{n \ge 0}$$.
