@@ -22,3 +22,29 @@ Let $$(\Omega, \mathcal{F_n}, \mathbb{P})$$ be a filtered probability space. A s
 - $$\mathbb{E} \vert X_n \vert < \infty, \forall n \ge 0$$.
 - $$X$$ is adapted to $$(\mathcal{F_n})_{n \ge 0}$$.
 - $$\mathbb{E} [ X_{n+1} \vert \mathcal{F_n} ]=(\ge, \le)X_n, \forall n \ge 0$$. 
+
+### Basic Properties of martingales
+- For $$m > n$$,
+  - if $$X$$ is a martingale, then $$\mathbb{E}[X_m \vert F_n] = X_n$$.
+  - if $$X$$ is a submartingale, then $$\mathbb{E}[X_m \vert F_n] \ge X_n$$.
+  - if $$X$$ is a supermartingale, then $$\mathbb{E}[X_m \vert F_n] \le X_n$$.
+- if $$X$$ is a martingale, then $$\mathbb{E}(X_m) = \mathbb{E}(X_0),  \forall n \ge 0$$
+
+#### Proof of the second property
+Because of the tower property of conditional expectation, we have 
+$$\mathbb{E}(X_m) = \mathbb{E} [\mathbb{E}[X_m \vert F_0]]$$.
+
+Because $$X$$ is a martingale, then $$\mathbb{E} [\mathbb{E}[X_m \vert F_0]]= \mathbb{E} (X_0)$$.
+
+Finally we have $$\mathbb{E}(X_m)=\mathbb{E}(X_0)$$.
+
+
+### Stopping time
+A random variable $$\tau: \Omega \rightarrow \mathbb{N} \cup \{ \infty \}$$ is called a stopping time if $$\{\tau \le n \} \in \mathcal{F}_n$$ for all $$n \in \mathbb{N}$$.
+This means that one can determine whether or not $$\{\tau \le n \}$$ on the basis of all the information up to time $$n$$, i.e. $$\mathcal{F}_n$$. $$\tau$$ does not "look into the future" to decide whether or not to stop at time less than or equale to n.
+   
+#### Theorem 
+The r.v. $$\tau$$ is a stopping time iff $$\{\tau = n\} \in \mathcal{F}$$ for all $$n \ge 0$$.
+
+#### Proof of the theorem
+![](../../Mathematics/probability/stopping_time_proof.png)
