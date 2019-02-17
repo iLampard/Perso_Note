@@ -55,45 +55,49 @@ Given a metric space $$(E, d)$$, $$x \in E, r \ge 0$$,
 ### Open set  
 Given a metric space $$(E, d)$$, set $$U \subset E$$ is open if $$\forall x \in U, \exists r >0, B(x,r) \in U$$. 
 
-### Properties of open set
+#### Properties of open set
 - $$\varnothing$$ and $$E$$ are open sets.
 - Any union of open sets is open.
 - Any finite intersection of open sets is open.
 
-#### Proof of the second property
+##### Proof of the second property
 
-Define $$V= \cup \limits_{i \in I} U_i=\{x \in E: \exists i \in I, x \in U_i \}$$.
+Define $$V= \bigcup \limits_{i \in I} U_i=\{x \in E: \exists i \in I, x \in U_i \}$$.
 
 Then $$\forall x \in V, \exists i \in I, x \in U_i$$.
 
 Then by definition $$\exists r > 0, B(x,r) \subset U_i \subset V$$.  
-$$
-\begin{proof}
-\end{proof}
-$$
 
-#### Proof of the third property
 
-Define $$W= \cap^n \limits_{i=1} U_i=\{x \in E: \forall i=1,2,..n, x \in U_i \}$$.
+##### Proof of the third property
+
+Define $$W= \bigcap^n \limits_{i=1} U_i=\{x \in E: \forall i=1,2,..n, x \in U_i \}$$.
 
 Then $$\forall x \in W, x \in U_i \forall i =1,2,..n$$. 
 
 Then by definition $$\forall i, \exists r_i > 0, B(x,r_i) \subset U_i$$.
 
-Set $$r=\min{r_1, r_2,..., r_n}$$, then $$B(x,r) \subset B(x, r_i) \subset U_i \forall i$$. Therefore $$B(x, r) \subset W$$.
-
-$$
-\begin{proof}
-\end{proof}
-$$
+Set $$r=\min{r_1, r_2,..., r_n}$$, then $$B(x,r) \subset B(x, r_i) \subset U_i, \forall i$$. Therefore $$B(x, r) \subset W$$.
 
 
 
-#### Remark: in $R$ an open ball is an open interval.
+#### Remark: in $$R$$ an open ball is an open interval.
 
 
 ### Interior point
+For $$A \subset E, x \in A$$, $$x$$ is an *interior point* if $$\exists r > 0$$, such that $$B(x,r) \subset A$$. The set of interior point is the interiors of A.
 
+#### Theorem of interior point
+A set if open iff all its points are interior points.
+
+### Closed set
+
+$$U \subset E$$ is closed if $$U^c = E \ U$$ is open.
+
+#### Properties of closed set
+- $$\varnothing$$ and $$E$$ are closed sets.
+- Any intersection of closed sets is closed.
+- Any finite union of closed sets is closed. 
 
 
 
