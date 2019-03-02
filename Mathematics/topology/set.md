@@ -132,13 +132,13 @@ $$[0, 1]$$ is compact while $$(0,1]$$ is not.
 
 #### Remark
 - Any finite set is compact.
-- $$(E, \Vert \cdot \Vert)$$, $$\hat{\mathcal{B}}(0,1)$$ is compact.
+- $$(E, \Vert \cdot \Vert)$$, $$\widebar{\mathcal{B}}(0,1)$$ is compact.
 
 
 ### Complete set
 
 #### Cauchy sequence
-A sequence is a Cauchy sequence if $$\lim_\limits{n \rightarrow \infty, m \rightarrow \infty} d(x_n, x_m) = 0$$
+A sequence is a Cauchy sequence if $$\lim_\limits{n \rightarrow \infty, \\ m \rightarrow \infty} d(x_n, x_m) = 0$$
 
 #### Remark of Cauchy sequence 
 - A Cauchy sequnce is bounded.
@@ -149,7 +149,7 @@ A sequence is a Cauchy sequence if $$\lim_\limits{n \rightarrow \infty, m \right
 A subset $$A$$ of a metric space  is complete if every Cauchy sequence in $$A$$ conveges to some point in $$A$$. 
 
 #### Properties of a complete set
-- Complete $\Rightarrow$ closed.
-- Compact $\Rightarrow$ complete.
+- Complete $$\Rightarrow$$ closed.
+- Compact $$\Rightarrow$$ complete.
 - A closed subset of a complete set is complete.
   
