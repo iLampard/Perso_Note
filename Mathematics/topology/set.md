@@ -101,7 +101,7 @@ $$U \subset E$$ is closed if $$U^c = E \ U$$ is open.
 
 ### Closure point
 
-For $$A \subset E$$, $$x \in A$$ is a closure point if $$\forall r >0$$, $$B(x, r) \cap A \neq \varnothing$$. 
+For $$A \subset E$$, $$x \in A $$ is a closure point if $$\forall r $$, $$B(x, r) \cap A \neq \varnothing $$. 
 
 The set of closure points is the closure of $$A$$.
 
