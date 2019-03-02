@@ -92,7 +92,7 @@ A set if open iff all its points are interior points.
 
 ### Closed set
 
-$$U \subset E$$ is closed if $$U^c = E \ U$$ is open.
+$$U \subset E $$ is closed if $$U^c = E \ U$$ is open.
 
 #### Properties of closed set
 - $$\varnothing$$ and $$E$$ are closed sets.
@@ -111,6 +111,26 @@ A set is closed iff all its closure points are closure points.
 - $$(cl A)^c = int (A^c)$$ 
 - $$cl(A)$$ is the smallest closed set containning $$A$$.
 
+#### Theorem of closure point 
+$$x \in cl(A)$$ iff there exits a sequence $$\{ x_n\} \in A$$ that converges to $$x$$.
+
+Typical use of the theorem: to show that $$A$$ is closed, show that if $$\{ x_n\}$$ is a sequence in $$A$$ that converges to $$x$$, then $$x$$ is in $$A$$.
 
 
+### Compact set 
+A subset $A$ of a metric space is **compact** if every sequence in $A$ admits a subsequence that converges to some point in $A$.
+
+$[0, 1]$ is compact while $(0,1]$ is not.
+
+#### Properties of compact set
+- compact $\Rightarrow$ bounded and closed.
+- A closed subset of a compact set is compact.
+
+### Theorem of compact set
+- In finite dimention space($R^n$), compact $\Longleftrightarrow$ bounded and closed.
+- In finite dimention vector space with a norm, compact $\Longleftrightarrow$ bounded and closed.
+
+#### Remark
+- Any finite set is compact.
+- $(E, \Vert \cdot \Vert)$, $\hat{\mathcal{B}(0,1)$ is compact.
 
