@@ -92,7 +92,7 @@ A set if open iff all its points are interior points.
 
 ### Closed set
 
-$$U \subset E $$ is closed if $$U^c = E \ U$$ is open.
+$$U \subset E $$ is closed if $$U^c = E \backslash U$$ is open.
 
 #### Properties of closed set
 - $$\varnothing$$ and $$E$$ are closed sets.
