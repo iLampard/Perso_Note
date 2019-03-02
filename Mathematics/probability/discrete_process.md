@@ -48,3 +48,7 @@ The r.v. $$\tau$$ is a stopping time iff $$\{\tau = n\} \in \mathcal{F}$$ for al
 
 #### Proof of the theorem
 ![](../../Mathematics/probability/stopping_time_proof.png)
+
+
+### Reference 
+- [Stochastic Calculs](https://github.com/hongchaopan/MTH9831-Stochastic-Calculus)

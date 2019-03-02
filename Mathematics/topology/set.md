@@ -118,7 +118,7 @@ Typical use of the theorem: to show that $$A$$ is closed, show that if $$\{ x_n\
 
 
 ### Compact set 
-A subset $$A$$ of a met$$$$ic space is **compact** if every sequence in $$A$$ admits a subsequence that converges to some point in $$A$$.
+A subset $$A$$ of a metric space is *compact* if every sequence in $$A$$ admits a subsequence that converges to some point in $$A$$.
 
 $$[0, 1]$$ is compact while $$(0,1]$$ is not.
 
@@ -132,5 +132,24 @@ $$[0, 1]$$ is compact while $$(0,1]$$ is not.
 
 #### Remark
 - Any finite set is compact.
-- $$(E, \Vert \cdot \Vert)$$, $$\hat{\mathcal{B}(0,1)$$ is compact.
+- $$(E, \Vert \cdot \Vert)$$, $$\hat{\mathcal{B}}(0,1)$$ is compact.
 
+
+### Complete set
+
+#### Cauchy sequence
+A sequence is a Cauchy sequence if $$\lim_\limits{n \rightarrow \infty, m \rightarrow \infty} d(x_n, x_m) = 0$$
+
+#### Remark of Cauchy sequence 
+- A Cauchy sequnce is bounded.
+- A converging sequence is Cauchy.
+- A Cauchy sequence that has a converging subsequence is convering.
+
+#### Complete set 
+A subset $$A$$ of a metric space  is complete if every Cauchy sequence in $$A$$ conveges to some point in $$A$$. 
+
+#### Properties of a complete set
+- Complete $\Rightarrow$ closed.
+- Compact $\Rightarrow$ complete.
+- A closed subset of a complete set is complete.
+  
