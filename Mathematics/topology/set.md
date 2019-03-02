@@ -95,9 +95,22 @@ A set if open iff all its points are interior points.
 $$U \subset E$$ is closed if $$U^c = E \ U$$ is open.
 
 #### Properties of closed set
-- $$\varnothing$$ and $$E$$ are closed sets.
+- $$\varnothing$$ and $$E$$$ are closed sets.
 - Any intersection of closed sets is closed.
 - Any finite union of closed sets is closed. 
+
+### Closure point
+
+For $$A \subset E$$, $$x \in A# is a closure point if $$\forall r >0$$, $$B(x, r) \cap A \neq \varnothing$$. 
+
+The set of closure points is the closure of $$A$$.
+
+A set is closed iff all its closure points are closure points.
+
+#### Properties of closure point
+- $$(cl A)^c = int (A^c)$$ 
+- $$cl(A)$$ is the smallest closed set containning $$A$$.
+
 
 
 
