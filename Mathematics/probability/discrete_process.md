@@ -50,12 +50,12 @@ The r.v. $$\tau$$ is a stopping time iff $$\{\tau = n\} \in \mathcal{F}$$ for al
 ![](../../Mathematics/probability/stopping_time_proof.png)
 
 #### Lemma 
-If $\tau_1, \tau_2$ are stopping times so are $\tau_1 \wedge \tau_2:= \min(\tau_1, \tau_2), \tau_1 \vee \tau_2:= \max(\tau_1, \tau_2), \tau_1 + \tau_2$.
+If $$\tau_1, \tau_2$$ are stopping times so are $$\tau_1 \wedge \tau_2:= \min(\tau_1, \tau_2), \tau_1 \vee \tau_2:= \max(\tau_1, \tau_2), \tau_1 + \tau_2$$.
 
 
 ### Stopped process
 #### Theorem 
-Let $M_n$ be an $\mathcal{F}_n$ (sub-, super-)martingale and $\tau$ be an $\mathcal{F}_n$ stopping time. Then $M_n \wedge \tau$ is an $\mathcal{F}_n$ (sub-, super-)martingale
+Let $$M_n$$ be an $$\mathcal{F}_n$$ (sub-, super-)martingale and $$\tau$$ be an $$\mathcal{F}_n$$ stopping time. Then $$M_n \wedge \tau$$ is an $$\mathcal{F}_n$$ (sub-, super-)martingale
 
 ### Reference 
 - [Stochastic Calculs](https://github.com/hongchaopan/MTH9831-Stochastic-Calculus)
