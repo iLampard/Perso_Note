@@ -118,19 +118,19 @@ Typical use of the theorem: to show that $$A$$ is closed, show that if $$\{ x_n\
 
 
 ### Compact set 
-A subset $A$ of a metric space is **compact** if every sequence in $A$ admits a subsequence that converges to some point in $A$.
+A subset $$A$$ of a met$$$$ic space is **compact** if every sequence in $$A$$ admits a subsequence that converges to some point in $$A$$.
 
-$[0, 1]$ is compact while $(0,1]$ is not.
+$$[0, 1]$$ is compact while $$(0,1]$$ is not.
 
 #### Properties of compact set
-- compact $\Rightarrow$ bounded and closed.
+- compact $$\Rightarrow$$ bounded and closed.
 - A closed subset of a compact set is compact.
 
 ### Theorem of compact set
-- In finite dimention space($R^n$), compact $\Longleftrightarrow$ bounded and closed.
-- In finite dimention vector space with a norm, compact $\Longleftrightarrow$ bounded and closed.
+- In finite dimention space($$R^n$$), compact $$\Longleftrightarrow$$ bounded and closed.
+- In finite dimention vector space with a norm, compact $$\Longleftrightarrow$$ bounded and closed.
 
 #### Remark
 - Any finite set is compact.
-- $(E, \Vert \cdot \Vert)$, $\hat{\mathcal{B}(0,1)$ is compact.
+- $$(E, \Vert \cdot \Vert)$$, $$\hat{\mathcal{B}(0,1)$$ is compact.
 
