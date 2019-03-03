@@ -62,7 +62,11 @@ As a convetion we define $$\left \langle H \cdot X  \right \rangle_0=0$$
 
 #### Properties of the stochastic integral
 - Let $$X$$ be a supermartingale(submartingale) and $$H$$ be nonnegative, bounded and predicatable. Then $$H\cdot X$$ is a supermartingale(submartingale).
-- Let $$X$$ be a submartingale. Supoose $$H$$ and $$K$$ are bounded and predicatable such that $$H_n \ge K_n \forall n \ge 0$$.
+- Let $$X$$ be a submartingale. Supoose $$H$$ and $$K$$ are bounded and predicatable such that $$H_n \ge K_n \forall n \ge 0$$, then 
+$$
+\mathbb{E} \left[\left \langle H \cdot X  \right \rangle_n \right] \ge \mathbb{E} \left[\left \langle H \cdot X  \right \rangle_n \right]
+$$
+
 - Let $$X$$ be a martingale and $$H$$ be bounded and predictable(need not be nonnegative), then $$H \cdot X$$ is a martingale.
 
 ![](../../Mathematics/probability/martingale_proof.png)
@@ -83,7 +87,11 @@ If $$\tau_1, \tau_2$$ are stopping times so are $$\tau_1 \wedge \tau_2:= \min(\t
 
 ### Stopped process
 #### Theorem 
-Let $$M_n$$ be an $$\mathcal{F}_n$$ (sub-, super-)martingale and $$\tau$$ be an $$\mathcal{F}_n$$ stopping time. Then $$M_n \wedge \tau$$ is an $$\mathcal{F}_n$$ (sub-, super-)martingale
+Let $$M_n$$ be an $$\mathcal{F}_n$$ (sub-, super-)martingale and $$\tau$$ be an $$\mathcal{F}_n$$ stopping time. Then $$M_{n \wedge \tau}$$ is an $$\mathcal{F}_n$$ (sub-, super-)martingale
+
+
+![](../../Mathematics/probability/stopped_process_proof.png)
+
 
 ### Reference 
 - [Stochastic Calculs](https://github.com/hongchaopan/MTH9831-Stochastic-Calculus)
