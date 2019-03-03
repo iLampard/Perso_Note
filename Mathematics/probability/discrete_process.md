@@ -39,6 +39,34 @@ Because $$X$$ is a martingale, then $$\mathbb{E} [\mathbb{E}[X_m \vert F_0]]= \m
 Finally we have $$\mathbb{E}(X_m)=\mathbb{E}(X_0)$$.
 
 
+### Predictable process
+
+#### Definition 
+A stochastic process $$H$$ is called *predictable* if $$H_n$$ is $$\mathcal{F}_{n-1}$$ measureable for every $$n \ge 1$$. Note that as a convention we do not define $$H_0$$.
+
+#### Doob's decomposition theorem
+Any submartingale(supermartingale) $$X$$ can ben written in a unique way as $$X_n=M_n+A_n$$, where $$M$$ is a martingale and $$A$$ is a predictable and increasing(decreasing) sequence with $$A_0=0$$.
+
+### Discrete stochastic integral 
+
+#### Definition 
+The stochastic integral of the predictable process $$H$$ with respect to a process $$X$$, denoted by $$H \cdot X$$, is defined as 
+
+$$
+\left \langle H \cdot X  \right \rangle_n  = \sum_{i=1}^n H_i \Delta X_i
+$$
+where $$\Delta X_i=X_i - X_{i-1}$$
+
+As a convetion we define $$\left \langle H \cdot X  \right \rangle_0=0$$ 
+
+
+#### Properties of the stochastic integral
+- Let $$X$$ be a supermartingale(submartingale) and $$H$$ be nonnegative, bounded and predicatable. Then $$H\cdot X$$ is a supermartingale(submartingale).
+- Let $$X$$ be a submartingale. Supoose $$H$$ and $$K$$ are bounded and predicatable such that $$H_n \ge K_n \forall n \ge 0$$.
+- Let $$X$$ be a martingale and $$H$$ be bounded and predictable(need not be nonnegative), then $$H \cdot X$$ is a martingale.
+
+![](../../Mathematics/probability/martingale_proof.png)
+
 ### Stopping time
 A random variable $$\tau: \Omega \rightarrow \mathbb{N} \cup \{ \infty \}$$ is called a stopping time if $$\{\tau \le n \} \in \mathcal{F}_n$$ for all $$n \in \mathbb{N}$$.
 This means that one can determine whether or not $$\{\tau \le n \}$$ on the basis of all the information up to time $$n$$, i.e. $$\mathcal{F}_n$$. $$\tau$$ does not "look into the future" to decide whether or not to stop at time less than or equale to n.
