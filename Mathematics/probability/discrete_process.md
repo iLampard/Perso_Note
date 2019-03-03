@@ -93,5 +93,38 @@ Let $$M_n$$ be an $$\mathcal{F}_n$$ (sub-, super-)martingale and $$\tau$$ be an 
 ![](../../Mathematics/probability/stopped_process_proof.png)
 
 
+
+### Optional stopping theorem (bounded stopping time)
+Let $\tau$ be a stopping time and $M$ be a martingale wrt. the filtration $\left(\mathcal{F}_n \right)_{n\ge 0}$.
+
+If there is a constant $K \in \mathbb{N}$ such that $\tau \le K$ a.s. then 
+
+$
+\mathbb{E} (M_{\tau}) = \mathbb{E}( M_0)
+$
+
+#### Proof of the theorem
+Since $M$ is a martingale, then $\left( M_{\tau \wedge n} \right)_{n \ge 0}$ is a martingale as well.
+
+For martingales we know that for all $n \ge 0$,
+
+$
+\mathbb{E} (M_{\tau \wedge n}) = \mathbb{E}(M_0)
+$
+
+Note also for $n\ge K$, we have $\tau \wedge n = \tau$, hence for all $n \ge K$
+
+$
+M_{\tau \wedge n} = M_{\tau}
+$
+
+Therefore 
+
+$
+\mathbb{E}(M_{\tau})= \mathbb{E}(M_0)
+$
+
+#### Application
+
 ### Reference 
 - [Stochastic Calculs](https://github.com/hongchaopan/MTH9831-Stochastic-Calculus)
