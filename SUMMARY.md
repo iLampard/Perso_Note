@@ -45,6 +45,7 @@
     * [transformer model](DeepLearning/nlp/transformer.md)
     * [bert model](DeepLearning/nlp/google_bert.md)
 * Probabilistic
+  * [bayes](DeepLearning/probabilistic/bayes.md)
   * [variational antuoencoder](DeepLearning/probabilistic/vae.md)
 
 ## 常用算法
